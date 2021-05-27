@@ -1,0 +1,43 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+
+/* Billedet */
+
+.billede{
+    max-width: 100%;
+    Clip-path: polygon(80% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+    opacity: 90%;
+}
+
+section h3{
+    color: #000066;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infografik {
+    width: 100%;
+}
+
+
+.book_her{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}

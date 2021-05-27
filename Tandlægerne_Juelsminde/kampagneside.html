@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content=""> UDFYLD DESCRIPTION -->
+    <link rel='shortcut icon' type='image/x-icon' href='images/logo.tand.svg'/>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/mobilmenu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kampagneside.css">
+    <title>Tandlægerne Juelsminde | Kampagneside</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav role='navigation' class="nav_bar">
+        <div>
+            <a href="index.html"><img src="images/logo.svg" alt="Logo for Tandlægerne Juelsminde" class="logo"></a>
+        </div>
+		<div id="menuToggle">
+			    <input type="checkbox" onclick="showMenu()">
+		    	<span class="streg"></span>
+			    <span class="streg"></span>
+			    <span class="streg"></span>
+			<ul id="menu" class="menuHidden">
+                <a href="booking.html">
+					<li>Booking</li><br>
+				</a>
+				<a href="behandlinger.html">
+					<li>Behandlinger</li><br>
+				</a>
+				<a href="klinikken.html">
+					<li>Klinikken</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
+    <!-- NAVIGATION BAR SLUT -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_icons_div">
+            <img src="images/point.svg" alt="point">
+            <h1>Adresse</h1>
+            <address>
+              Ejner Schous Allé 2<br>
+              7130 Juelsminde  
+            </address>
+
+            <img src="images/calender.svg" alt="point">
+            <h1>Åbningstider</h1>
+           
+            <div class="footer_aabningstider">
+               <div class="footer_card">
+                    <ul>
+                        <li>Mandag:  </li>
+                        <li>Tirsdag: </li>
+                        <li>Onsdag:  </li>
+                        <li>Torsdag: </li>
+                        <li>Fredag:  </li>
+                    </ul>
+                </div>
+
+                <div class=footer_card>
+                    <ul>
+                        <li>08:00 - 18:00</li>
+                        <li>08:00 - 18:00</li>
+                        <li>08:00 - 17:00</li>
+                        <li>08:00 - 18:00</li>
+                        <li>08:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="images/phone.svg" alt="Telefon">
+            <h1>Kontakt</h1>
+            <p>Tlf. 75693115</p>  
+            <p>klinik@tandjuel.dk</p>
+            <p>Tandjuel.dk</p>
+        </div>
+    </footer>
+    <!-- FOOTER SLUT -->
+
+    <!-- SCRIPTS -->
+    <script src="javascript/menu.js"></script> <!--Script for at mobilmenuen bliver vist, når der klikkes på burgermenuen-->
+</body>
+</html>

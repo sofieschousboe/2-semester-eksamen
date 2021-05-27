@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="description" content=""> UDFYLD DESCRIPTION -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content=""> UDFYLD DESCRIPTION -->
+    <link rel='shortcut icon' type='image/x-icon' href='images/logo.tand.svg'/>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/mobilmenu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/behandlinger.css">
+    <title>Tandlægerne Juelsminde | Behandlinger</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav role='navigation' class="nav_bar">
+        <div>
+            <a href="index.html"><img src="images/logo.svg" alt="Logo for Tandlægerne Juelsminde" class="logo"></a>
+        </div>
+		<div id="menuToggle">
+			    <input type="checkbox" onclick="showMenu()">
+		    	<span class="streg"></span>
+			    <span class="streg"></span>
+			    <span class="streg"></span>
+			<ul id="menu" class="menuHidden">
+                <a href="index.html">
+					<li>Forside</li><br>
+				</a>
+                <a href="booking.html">
+					<li>Booking</li><br>
+				</a>
+				<a href="klinikken.html">
+					<li>Klinikken</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
+    <!-- NAVIGATION BAR SLUT -->
+
+
+    <!-- Det første billede og teksten under -->
+    <section> 
+        <div class="overste_billede" alt="Stemningsbillede fra klinikken"></div>
+
+        <div class="tekst">
+            <h1>Vores behandlinger</h1>
+            <p>Hos Tandlægerne Juelsminde gør vi en dyd ud af at behandle alle vores patienter med højeste kvalitet og med den bedste service.</p>
+        </div>
+    </section> 
+
+
+<!-- Flexboks med cards af behandlingerne -->
+
+<section>
+    <div class="flexbox_behandlinger">
+
+        <div class="card">
+            <div class="billede_cards rodbehandling"></div>
+
+            <div class="tekst_cards">
+                <h3>Rodbehandling</h3>
+                <p>Rodbehandling udføres når... bla bla blaaa</p> <br>
+                <p><strong>Pris:</strong>&nbsp;999kr,-</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="billede_cards fjernelse"></div>
+
+            <div class="tekst_cards">
+                <h3>Fjernelse af tand</h3>
+                <p>Fjernelse af tand sker når... bla bla blaaa</p> <br>
+                <p><strong>Pris:</strong>&nbsp;200kr,-</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="billede_cards plastfyldning"></div>
+
+            <div class="tekst_cards">
+                <h3>Plastfyldning</h3>
+                <p>Plastfyldning laves når.. bla bla blaaa</p> <br>
+                <p><strong>Pris:</strong>&nbsp;819kr,-</p>
+            </div>
+        </div>
+
+        
+
+        <div class="card">
+            <div class="billede_cards bedovelse"></div>
+
+            <div class="tekst_cards">
+                <h3>Bedøvelse</h3>
+                <p>Bedøvelse udføres når... bla bla blaaa</p> <br>
+                <p><strong>Pris:</strong>&nbsp;1679kr,-</p>
+            </div>
+        </div>
+
+       
+
+        <div class="card">
+            <div class="billede_cards tandblegning"></div>
+
+            <div class="tekst_cards">
+                <h3>Tandblegning</h3>
+                <p>Tandblegning kan laves hvis... bla bla blaaa</p> <br>
+                <p><strong>Pris:</strong>&nbsp;1777kr,-</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="billede_cards krone"></div>
+
+            <div class="tekst_cards">
+                <h3>Krone</h3>
+                <p>Kronebehandling skal ske hvis... bla bla blaaa</p> <br>
+                <p><strong>Pris:</strong>&nbsp;2943kr,-</p>
+            </div>
+        </div>
+        
+
+    </div>
+</section>
+
+ <!--sektion med slideshow med anmeldelser-->
+    
+ <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+        <p class="text">” Jeg har udelukkende fået god og kompetent behandling hos min tandlæge Klaus, det er trykke rammer og jeg er altid afslappet når jeg sætter mig i stolen hos ham. De får mine varmeste anbefalinger hos Tandlægerne Juelsminde ”</p>
+        <div class="name">Tina Frank</div>
+    </div>
+
+    <div class="mySlides fade">
+        <p class="text">” Min familie og jeg, er igennem mange år kommet hos Tandlægerne Juelsminde, og jeg tænker vi forsætter i mange år endnu. Plus her fra! Specielt Gitte har taget godt hånd om vores datter, som havde tandlægeskræk. ”</p>
+        <div class="name">Peter Rygaard</div>
+    </div>
+
+    <div class="mySlides fade">
+        <p class="text">” Jeg kom første gang hos Klaus, da jeg oplevede ventetid hos min daværende tandlæge, og det har jeg ikke fortrydt siden! Klaus er dygtig og professionel, og jeg kan kun anbefale ham til andre som mangler en dygtig tandlæge! ”</p>
+        <div class="name">Søren Brohave</div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="javascript/forside.js"></script> <!--Script til at få slideshow til at køre, når du trykker på pile eller prikker-->
+
+
+    
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_icons_div">
+            <img src="images/point.svg" alt="point">
+            <h1>Adresse</h1>
+            <address>
+              Ejner Schous Allé 2<br>
+              7130 Juelsminde  
+            </address>
+
+            <img src="images/calender.svg" alt="point">
+            <h1>Åbningstider</h1>
+           
+            <div class="footer_aabningstider">
+               <div class="footer_card">
+                    <ul>
+                        <li>Mandag:  </li>
+                        <li>Tirsdag: </li>
+                        <li>Onsdag:  </li>
+                        <li>Torsdag: </li>
+                        <li>Fredag:  </li>
+                    </ul>
+                </div>
+
+                <div class=footer_card>
+                    <ul>
+                        <li>08:00 - 18:00</li>
+                        <li>08:00 - 18:00</li>
+                        <li>08:00 - 17:00</li>
+                        <li>08:00 - 18:00</li>
+                        <li>08:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="images/phone.svg" alt="Telefon">
+            <h1>Kontakt</h1>
+            <p>Tlf. 75693115</p>  
+            <p>klinik@tandjuel.dk</p>
+            <p>Tandjuel.dk</p>
+        </div>
+    </footer>
+    <!-- FOOTER SLUT -->
+
+    <!-- SCRIPTS -->
+    <script src="javascript/menu.js"></script> <!--Script for at mobilmenuen bliver vist, når der klikkes på burgermenuen-->
+</body>
+</html>

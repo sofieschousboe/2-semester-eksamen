@@ -1,0 +1,282 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.img_container {
+    clip-path: polygon(70% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+}
+
+.img_container img {
+    display: block;
+}
+
+/* PERSONALE TEKST SEKTION */
+
+.section {
+    display: block;
+    margin: 50px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+.section_tekst {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.section h1 {
+    font-size: 1.1rem;
+}
+
+.section p {
+    text-align: justify;
+}
+
+
+/* PERSONALE BILLEDER SEKTION */
+
+.personale_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.personale_card {
+    max-width: 40%;
+    margin: 10px;
+}
+
+.personale_img img {
+    max-width: 100%;
+}
+
+.personale_navn p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* VORES VÆRDIER */
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}
+
+.notstyle {
+    width: 50%;
+    padding: 5px;
+    background-color: darkblue;
+    color: darkgoldenrod;
+    font-size: 80px;
+}
+
+/* CONTAINER STYLING */
+.contQ {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    perspective: 1000px;
+    border: 1px solid black;
+}
+
+.contQ img {
+    width: 40%;
+}
+
+.contQ h1 {
+    font-size: 1.3rem;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+/* BAGSIDE STYLING */
+.back {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    perspective: 1000px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/*FLIP CARD STYLING */
+
+/* entire container, keeps perspective */
+/* .flip-container {
+	perspective: 1000px;
+} */
+
+/* flip the pane when hovered */
+/* .flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+} */
+
+/* .flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+} */
+/* 
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+} */
+
+/* flip speed goes here */
+/* .flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+} */
+
+/* hide back of pane during swap */
+/* .front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+} */
+
+/* front pane, placed above back */
+/* .front {
+	z-index: 2;
+	/* for firefox 31 */
+	/* transform: rotateY(0deg);
+} */
+
+/* back, initially hidden pane */
+/* .back {
+	transform: rotateY(180deg);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .values_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+} */
+
+/* The flip card container */
+/* .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px; /* Laver 3D effekten
+} */
+  
+  /* Skal eksistere for at for- og bagsiden kan positioneres */
+  /* .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center; */
+    /* transition: transform 0.8s;
+    transform-style: preserve-3d; 
+  }*/
+
+  
+  /* Horizontal flip ved mouse-over flipboks containeren */
+  /* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+  
+  /* Positionering af for- og bagsiden */
+  /* .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    /* backface-visibility: hidden;
+    text-align: center;
+} */
+  
+  /* Forsiden (fallback hvis illustrationen ikke virker)
+  .flip-card-front {
+    EVENTUEL STYLING
+} */
+
+  /* Styling til selve forsidebillederne */
+  /* .flip-card-front img {
+    width:150px;
+    height:150px;
+} */
+  
+  /* Style bagsiden */
+  /* .flip-card-back {
+    color: #000066;
+    transform: rotateY(180deg);
+} */
