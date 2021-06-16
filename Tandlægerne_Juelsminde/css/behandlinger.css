@@ -1,29 +1,21 @@
-/* Basic CSS reset */
-*,
-:after,
-:before {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 100%;
-}
-
-/* You start your css below */
-
 /* Her er styling på det første billede og teksten under*/
 
+.section_b {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
 .overste_billede{
-    background-image: url(../images/images_behandlinger/klaus_behandlinger.jpg);
-    background-size: 100%;
+    width: 100%;
+    opacity: 88%;
     height: 200px;
-    padding-top: 30px;
-    padding-left: 20px;
-    clip-path: polygon(30% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
-    opacity: 90%;
+    clip-path: polygon(70% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+}
+
+.section_b img {
+    max-width: 100%;
 }
 
 .tekst_billede{
@@ -45,21 +37,21 @@ html {
 }
 
 .tekst{
-    width: 95%;
     text-align: justify;
     color: #000066;
-    padding: 5px;
+    padding: 20px;
     text-align: justify;
     display: block;
     margin: 0 auto;
     line-height: 122%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tekst h1{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 
@@ -74,15 +66,17 @@ html {
 }
 
 .card{
-    max-width: 49%;
+    max-width: 48%;
     margin-top: 8px;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .tekst_cards{
+    height: 315px;
     background-color: #000066;
     color: white;
-    height: 140px;
     padding: 5px;
+    font-size: 0.95rem;
 }
 
 .billede_cards  {
@@ -116,7 +110,7 @@ html {
 }
 
 .bedovelse{
-    background-image: url(../images/images_behandlinger/bedøvelse.jpg);
+    background-image: url(../images/images_behandlinger/bedovelse.jpg);
     background-size: cover;
     height: 140px;
 }
@@ -128,13 +122,6 @@ html {
     height: 140px;
 }
 
-.illustration{
-    height: 135px;
-    width: 140px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 15px;
-}
 
 /* CSS sektion med slider */
 
@@ -142,7 +129,6 @@ html {
     width: 100%;
     height: 250px;
     position: relative;
-    box-shadow: 5px  5px 5px gray;
     margin-top: 30px;
     
 }
@@ -226,3 +212,121 @@ html {
         opacity: 1
     }
 }
+
+
+/* optimering til ipad */
+
+@media screen and (min-width: 600px) {
+
+    .overste_billede {
+        height: 400px;
+    }
+
+    .tekst h1 {
+        font-size: 1.8rem;
+    }
+    .tekst {
+        font-size: 1.3rem;
+    }
+
+    .flexbox_behandlinger {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 47%;
+        margin-top: 20px;
+    }
+
+    .billede_cards {
+        height: 300px;
+    }
+
+    .tekst_cards {
+        font-size: 1.3rem;
+        height: 180px;
+    }
+
+    .slideshow-container {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 20px;
+        height: 170px;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .dot {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* optimering til ipad */
+
+@media screen and (min-width: 600px) {
+
+
+    .tekst_cards {
+        height: 380px;
+    }
+
+    .billede_cards {
+        height: 230px;
+    }
+
+}
+
+/*OPTIMERING TIL COMPUTER*/
+
+@media screen and (min-width: 900px) {
+
+   
+    .overste_billede {
+        height: 450px;
+    }
+    
+    .card {
+        max-width: 32%;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    .overste_billede {
+        height: 550px;
+    }
+
+    .billede_cards {
+        height: 280px;
+    }
+
+    .tekst_cards {
+        height: 350px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .overste_billede {
+        height: 600px;
+    }
+
+    .billede_cards {
+        height: 300px;
+    }
+}
+
+
+
