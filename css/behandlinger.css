@@ -1,0 +1,332 @@
+/* Her er styling på det første billede og teksten under*/
+
+.section_b {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.overste_billede{
+    width: 100%;
+    opacity: 88%;
+    height: 200px;
+    clip-path: polygon(70% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+}
+
+.section_b img {
+    max-width: 100%;
+}
+
+.tekst_billede{
+    width: 70%;
+    text-align: justify;
+    background-color: rgb(102 102 102 / 20%);
+    color: white;
+    padding: 5px;
+}
+
+.tekst_billede h1{
+    font-size: 1.3rem;
+}
+
+.tekst_billede p{
+    line-height: 122%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.tekst{
+    text-align: justify;
+    color: #000066;
+    padding: 20px;
+    text-align: justify;
+    display: block;
+    margin: 0 auto;
+    line-height: 122%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tekst h1{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/* Her kommer cards med behandlingerne */
+
+.flexbox_behandlinger{
+    margin: 10px 10px 35px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 48%;
+    margin-top: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.tekst_cards{
+    height: 315px;
+    background-color: #000066;
+    color: white;
+    padding: 5px;
+    font-size: 0.95rem;
+}
+
+.billede_cards  {
+    background-image: url(../images/images_behandlinger/DSC_1182.jpg);
+    height: 140px;
+}
+
+.rodbehandling{
+    background-image: url(../images/images_behandlinger/rodbehandling.jpg);
+    background-size: cover;
+    height: 140px;
+}
+
+.fjernelse{
+    background-image: url(../images/images_behandlinger/fjernelse.jpg);
+    background-size: cover;
+    height: 140px;
+}
+
+.plastfyldning{
+    background-image: url(../images/images_behandlinger/plastfyldning.jpg);
+    background-size: cover;
+    height: 140px;
+}
+
+
+.krone{
+    background-image: url(../images/images_behandlinger/krone.jpg);
+    background-size: cover;
+    height: 140px;
+}
+
+.bedovelse{
+    background-image: url(../images/images_behandlinger/bedovelse.jpg);
+    background-size: cover;
+    height: 140px;
+}
+
+
+.tandblegning{
+    background-image: url(../images/images_behandlinger/tandblegning.jpg);
+    background-size: cover;
+    height: 140px;
+}
+
+
+/* CSS sektion med slider */
+
+.slideshow-container {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin-top: 30px;
+    
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 2px;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 1px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 102, 0.7);
+}
+
+.text {
+    color: black;
+    font-size: 1.1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.name {
+    text-align: end;
+    padding: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin: 10px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #000066;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* optimering til ipad */
+
+@media screen and (min-width: 600px) {
+
+    .overste_billede {
+        height: 400px;
+    }
+
+    .tekst h1 {
+        font-size: 1.8rem;
+    }
+    .tekst {
+        font-size: 1.3rem;
+    }
+
+    .flexbox_behandlinger {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 47%;
+        margin-top: 20px;
+    }
+
+    .billede_cards {
+        height: 300px;
+    }
+
+    .tekst_cards {
+        font-size: 1.3rem;
+        height: 180px;
+    }
+
+    .slideshow-container {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 20px;
+        height: 170px;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .dot {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* optimering til ipad */
+
+@media screen and (min-width: 600px) {
+
+
+    .tekst_cards {
+        height: 380px;
+    }
+
+    .billede_cards {
+        height: 230px;
+    }
+
+}
+
+/*OPTIMERING TIL COMPUTER*/
+
+@media screen and (min-width: 900px) {
+
+   
+    .overste_billede {
+        height: 450px;
+    }
+    
+    .card {
+        max-width: 32%;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    .overste_billede {
+        height: 550px;
+    }
+
+    .billede_cards {
+        height: 280px;
+    }
+
+    .tekst_cards {
+        height: 350px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .overste_billede {
+        height: 600px;
+    }
+
+    .billede_cards {
+        height: 300px;
+    }
+}
+
+
+

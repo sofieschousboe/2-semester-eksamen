@@ -1,0 +1,87 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.section {
+    margin-top: 120px;
+    text-align: center;
+    color: #E09400;
+}
+
+.section h1 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.section iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 280px;
+}
+
+.text p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 122%;
+    color: #000066;
+    margin: 20px;
+}
+
+.plakat_box {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.plakat_box img {
+    max-width: 100%;
+}
+
+.pic1 {
+    display: none;
+}
+
+/* OPTIMERING TIL DESKTOP */
+
+@media screen and (min-width: 900px) {
+
+    .section {
+        margin-top: 170px;
+    }
+
+    .section iframe {
+        height: 400px;
+    }
+
+    .plakat_box {
+        width: 48%;
+    }
+    .pic1 {
+        display: block;
+        padding-bottom: 8px;
+    }
+
+    .pic2 {
+        display: none;
+    }
+
+    .flex_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

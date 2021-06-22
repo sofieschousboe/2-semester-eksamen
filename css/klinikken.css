@@ -1,0 +1,256 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    color: #000066;
+    max-width: 1200px;
+}
+
+/* You start your css below */
+
+.img_container {
+    margin-top: 70px;
+}
+
+.img_container img {
+    display: block;
+    width: 100%;
+    opacity: 90%;
+    clip-path: polygon(70% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+}
+
+/* PERSONALE TEKST SEKTION */
+
+.section {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section_tekst {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+}
+
+.section h1 {
+    font-size: 1.3rem;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 122%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+/* PERSONALE BILLEDER SEKTION */
+
+.personale_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.personale_card {
+    max-width: 48%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.personale_img img {
+    max-width: 100%;
+}
+
+.personale_navn p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* VORES VÆRDIER */
+
+.section_v {
+    display: block;
+    margin: 0 auto;
+    text-align: center;  
+
+}
+
+.section_v p {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+
+}
+
+.card__container {
+    margin-top: 30px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card__inner__q {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card__inner__o {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card__inner__t {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+
+/* Bruger JS til at tilføje en class til .card__inner der hedder .is-flipped */
+.card__inner__q.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__inner__o.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__inner__t.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Når der bruges 3D til at flippe elementer vil man kunne se bagsiden eller at det er spejlvendt eller vendt på hovedet osv. Ved at tildele denne property kan man gemme bagsiden af elementet, når det flipper */
+    -webkit-backface-visibility: hidden;
+    overflow: hidden; /* Gemmer content der går ud over kanten af containeren */
+}
+
+.card__face--front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bagsiden af card skal flippes, så man ikke kan se den */
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 10px 30px 0;
+}
+
+.card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.illustration {
+    display: block;
+    width: 100px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.card__header h2 {
+    color: #000066;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card__body {
+    padding: 10px 25px;
+}
+
+.card__body p {
+    color: #000066;
+    font-size: 16px;
+    line-height: 122%;
+}
+
+
+/* OPTIMERING TIL IPAD */
+
+@media screen and (min-width: 600px) {
+    
+    .section h1 {
+        font-size: 1.8rem; 
+    }
+
+    .section p {
+        font-size: 1.3rem;
+    }
+    
+    .illustration {
+        width: 150px;
+    }
+
+}
+
+
+
+/* OPTIMERING TIL COMPUTER */
+
+@media screen and (min-width: 900px) {
+
+    .personale_card{
+        max-width: 30%;
+        margin-bottom: 30px;
+    }
+
+    .img_container {
+     margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .img_container img {
+      height: 650px;
+  }  
+
+}
